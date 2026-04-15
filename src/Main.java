@@ -219,6 +219,7 @@ public class Main {
   // and access the current price for each stock. The order of the ticker symbols is not important.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+  // HashMap because each price of each is assigned a ticker symbol as a key and order is not important
 
   // Suppose you are building a music player application where users can create playlists.
   // Songs can be added to the end of the playlist in the order the user chooses, and the user can
@@ -226,6 +227,8 @@ public class Main {
   // their position in the playlist.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+  // ArrayList because you can add at the end of the list via the add() method and any action involving a
+  // position in a playlist is very similar to indexes in a ArrayList.
 
   // Suppose you are developing a search feature that keeps track of the user's
   // recent search queries. You want to store the queries in the order they were made,
@@ -234,4 +237,7 @@ public class Main {
   // to optimize for fast lookups or deletions.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+  // ArrayList because queries are ordered by insertion order. TreeSet and TreeMap don't apply
+  // to this situation because those data structures are for sorting in cases like shortest to largest
+  // or largest to shortest
 }
